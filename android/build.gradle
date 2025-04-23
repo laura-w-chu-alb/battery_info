@@ -2,7 +2,7 @@ group 'com.igrik12.battery_info'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.8.22'
+    ext.kotlin_version = '1.7.20'
     repositories {
         google()
         jcenter()
@@ -31,6 +31,10 @@ android {
     compileOptions {       
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
     
     sourceSets {
